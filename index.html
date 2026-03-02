@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AS7 68073536 Woraporn Sukaram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- เชื่อมไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- Form Overlay -->
+
+<div class="video-container">
+    <video id="videoPlayer" autoplay loop muted>
+        <source src="204006-923133925_small.mp4" type="video/mp4">
+    </video>
+    <div class="video-controls">
+        <button class="btn btn-warning" onclick="document.querySelector('video').play()">
+            <i class="bi bi-play-circle"></i> Play
+            
+        </button>
+        <button class="btn btn-danger" onclick="document.querySelector('video').pause()">
+            <i class="bi bi-stop-circle"></i> Stop
+        </button>
+    </div>
+</div>
+
+    </div>>
+    <div class="form-wrapper">
+        <div class="card p-4 shadow form-card">
+            <h2 class="text-center mb-4">แบบฟอร์มลงทะเบียน</h2>
+
+            <form action="#" method="post">
+
+                <div class="mb-3">
+                    <label class="form-label">ชื่อ-นามสกุล</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">อีเมล</label>
+                    <input type="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">รหัสผ่าน</label>
+                    <input type="password" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">เพศ</label><br>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" value="male">
+                        <label class="form-check-label">ชาย</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" value="female">
+                        <label class="form-check-label">หญิง</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+            <label class="form-label">ตำแหน่งงาน</label>
+            <select class="form-select">
+                <option selected disabled>เลือกตำแหน่ง</option>
+                <option>Manager</option>
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Marketing</option>
+            </select>
+        </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary me-2">ลงทะเบียน</button>
+                    <button type="reset" class="btn btn-danger">ล้างข้อมูล</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
